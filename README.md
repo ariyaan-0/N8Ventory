@@ -1,6 +1,6 @@
 # N8Ventory - Ela Inventory Automation
 
-**N8Ventory** is a robust Inventory and Order Management System designed specifically for **Ela**, an F-Commerce business. It streamlines the process of tracking products, managing stock levels, and processing customer orders through a modern, user-friendly dashboard.
+**N8Ventory** is a robust Inventory and Order Management System designed specifically for [**Ela**](https://www.facebook.com/bloomwithEla), an F-Commerce business. It streamlines the process of tracking products, managing stock levels, and processing customer orders through a modern, user-friendly dashboard.
 
 ## 🚀 Project Vision
 
