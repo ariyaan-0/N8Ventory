@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.*
+!.env.sample
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+postgres_data/
