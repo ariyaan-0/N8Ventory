@@ -49,7 +49,6 @@ The backend is structured around business domains to ensure scalability and main
 
 ### Database Diagram
 
-![Database Diagram](backend/diagrams/db_diagram.png)
 
 ```mermaid
 erDiagram
@@ -104,7 +103,7 @@ erDiagram
 1.  **Clone the repository**:
     ```bash
     git clone <repository-url>
-    cd Ela-Inventory-automation
+    cd N8Ventory
     ```
 
 2.  **Environment Setup**:
