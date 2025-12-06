@@ -47,6 +47,46 @@ The backend is structured around business domains to ensure scalability and main
 -   **CQRS (Command Query Responsibility Segregation)**: Operations are split into **Commands** (Write: Create, Update, Delete) and **Queries** (Read: Get).
 -   **Repository Pattern**: Data access logic is abstracted in `app/infrastructure/repositories`, keeping business logic clean.
 
+### Database Diagram
+
+![Database Diagram](backend/diagrams/db_diagram.png)
+
+```mermaid
+erDiagram
+    USERS {
+        integer id PK
+        string name
+        string email
+        string hashed_password
+    }
+
+    PRODUCTS {
+        integer id PK
+        string code_name
+        string name
+        string description
+        float price
+        integer quantity
+    }
+
+    ORDERS {
+        integer id PK
+        string customer_name
+        text code_names
+        string name
+        string address
+        string phone_number
+        float price
+        float delivery_charge
+        float discount_amount
+        float total_bill
+        string status
+    }
+```
+
+*Note: The `orders.code_names` field stores a JSON list of product codes, logically linking to `products.code_name`.*
+
+
 ### Testing Strategy
 -   **Unit Tests**: Isolated tests for repositories and services using an in-memory SQLite database (`StaticPool`) to ensure speed and reliability.
 -   **Integration Tests**: End-to-end API tests using `TestClient` to verify the interaction between components.
